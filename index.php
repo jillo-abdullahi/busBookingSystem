@@ -6,22 +6,26 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Bus reservation">
+    <meta name="author" content="Jillo Abdullahi">
     <!--<link rel="shortcut icon" href="../../assets/ico/favicon.ico">-->
 
-    <title>Moyale Raha | Home</title>
+    <title>Zain Services</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
+   <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+   
+   <!--Google font-->
+   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+   <!--Font-awesome-->
+   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     
-    <!-- Custom styles for this template -->
-    <link href="styles.css" rel="stylesheet">
-    <link href="js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+   <!-- Custom styles-->
+   <link href="./css/styles.css" rel="stylesheet">
+   <link href="js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
 
-    <!--validate form i.e. date-->
-    <script type="text/javascript">
+   <!--validate form i.e. date-->
+   <script type="text/javascript">
 				function validateForm()
 				{
 						var x=document.forms["booking_details"]["departure-date"].value;
@@ -44,8 +48,8 @@
 
 <div class="navbar navbar-inverse navbar-static-top">
 	<div class="container">
-		<a href="index.php" class="navbar-brand">Moyale Raha Reservation</a>
-		<button class="navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+		<a href="index.php" class="navbar-brand">Zayn Services</a>
+		<button class="navbar-toggle" data-toggle="collapse" data-target =".navHeaderCollapse">
 			
 			<span class ="icon-bar"></span>
 			<span class ="icon-bar"></span>
@@ -57,7 +61,7 @@
 				
 				<li class="active"><a href="#">Home</a></li>
 				<li><a href="aboutUs.php">About Us</a></li>
-				<li><a href="#contact" data-toggle= "modal">Contact Us</a></li>
+				<li><a href="#contact" data-toggle="modal">Contact Us</a></li>
 				<li><a href="adminSignIn.php">Administrator</a></li>
 				<li><a href="help.php">Help</a></li>
 			</ul>
@@ -67,13 +71,15 @@
 </div>
 
 
-<!-- Main jumbotron -->
+<!--Jumbotron -->
  <div class="container" >
-    <div class="jumbotron" id="topjumbotron">
+    <div class="jumbotron">
       <div class="container">
-        <h1>Moyale Raha</h1>
-        <p>Your one stop online bus reservation service.</p>
-        
+	    <div class="row">
+		  <div class="col-lg-12">
+            <h2>Proudly serving you.<br>Because the journey is just as important as the destination.</h2>
+		  </div>
+		 </div>
       </div>
     </div>
     </div>
@@ -171,7 +177,7 @@
 <div class="container">
 <div class="navbar navbar-default navbar-static-bottom">
 	<div class="container">
-		<p class="navbar-text"> Copyright@ 2014 by Moyale Raha. All Rights Reserved.</p>
+		<p class="navbar-text"> Copyright@ 2017 by Zain Services. All Rights Reserved.</p>
 	</div>
 </div>
 </div>
