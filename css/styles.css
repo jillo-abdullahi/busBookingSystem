@@ -1,8 +1,5 @@
-body{
 
-	background-image: url(img_background.png);
-	
-}
+/*Home page*/
 h1,h2,h3,h4,h5,h6 {
 	font-family:  "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: 700;
@@ -11,15 +8,28 @@ p{
 	font-family:  "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: 300;
 }
-
-#topjumbotron{
-	padding:0px !important; 
-	background-image: url(bus_header.jpg);
+.intro-header {
+	background: url(../images/Home/intro-bg.jpg) no-repeat center center;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	text-align: center;
-	color: black;
+	
+}
+.intro-message{
+	position: relative;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+.intro-message > h1{
+	color: #34495e;
+	text-shadow: 1px 1px 2px #fff;
+	font-size: 3em;
 }
 
-#middlejumbotron{
+/*Other pages*/
+
+/*#middlejumbotron{
 
 	background-image: url(bus2.jpg);
 	height: 460px;
@@ -97,7 +107,7 @@ p{
 	height: 380px;
 	width: 320px;
 
-}
+}*/
 
 
 
