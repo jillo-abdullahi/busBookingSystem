@@ -16,7 +16,7 @@
    <!--Google font-->
    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
    <!--Font-awesome-->
-   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
     
    <!-- Custom styles-->
    <link href="./css/styles.css" rel="stylesheet">
@@ -68,8 +68,6 @@
 </nav>
 
 
-
-
 <!--Intro-header-->
 <div class="intro-header">
   <div class="container">
@@ -84,95 +82,84 @@
 </div>
 
 <!--travel specifications form-->
-
-<div class="container">
-  <div class="jumbotron">
-    <div class="col-lg-6"></div>
-		<form class="form-horizontal col-lg-6" id="booking_details" action="seatsPage.php" method="POST" onsubmit="return validateForm()">
-			<div class="form-group">
-				<label for="source" class="col-lg-4 control-label" >From:</label>
-					<div class="col-lg-8">
-						<select class="form-control" id="from" name="from">
-							<option value="nairobi">Nairobi</option>
-							<option value="isiolo">Isiolo</option>
-							<option value="marsabit">Marsabit</option>
-							<option value="sololo">Sololo</option>
-							<option value="moyale">Moyale</option>
-						</select>
-					</div>
-			</div>
-			<div class="form-group">
-				<label for="destination" class="col-lg-4 control-label" >To:</label>
-				<div class="col-lg-8">
-					<select class="form-control" id="to" name="to">
-						<option value="isiolo">Isiolo</option>
-						<option value="nairobi">Nairobi</option>
-						<option value="marsabit">Marsabit</option>
-						<option value="sololo">Sololo</option>
-						<option value="moyale">Moyale</option>
-					</select>
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="departure-date" class="col-lg-6 control-label" >Date of Departure:</label>
-				<div class="col-lg-6">
-				<input type="text" class="form-control" id="departure-date" name="departure-date" placeholder="Date of departure"/>
-				</div>
-			</div>
-			<div class="form-group col-lg-12">
-				<div class="col-lg-6">
-			</div>
-
-			<div class="row">
-				<div class="radio col-lg-3">
-					<label><input type="radio" name="trip-type" id="one-way" value="1" checked>One way</label>
-				</div>
-
-												<div class=" radio col-lg-3 pull-right ">
-													<label>
-														<input type="radio" name="trip-type" id="two-way" value="2">
-															Two way
-													</label>
-												</div>
-										
-										</div>
-							</div>
-
-								<div class="form-group" >
-										<label for="source" class="col-lg-4 control-label"></label>
-												<div class="col-lg-8">
-													<div class="well" id="fare-summary">Fare per seat: Ksh. <span class="value">2000</span></div>
-													<input type="hidden" name="fare" id="fare-hidden" value="2000"/>
-												</div>
-								</div>	
-
-								<div class="form-group" >
-										<label for="source" class="col-lg-4 control-label"></label>
-											<div class="col-lg-8">
-												<p>
-													<input type="submit" class="btn btn-primary btn-lg pull-right" role="button" id="btnCheckSeats" value="Check seats availability"/>
-												</p>
-													
-											</div>
-								</div>			
-							</form>
-							
-						
-
-					
-				</div>
-			</div>
+<div class="spec-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+	   <form id="booking_details" action="seatsPage.php" method="POST" onsubmit="return validateForm()">
+		<div class="form-group">
+			<label for="source" class="control-label" >From:</label>
+			<select class="form-control" id="from" name="from">
+				<option value="nairobi">Nairobi</option>
+				<option value="isiolo">Isiolo</option>
+				<option value="marsabit">Marsabit</option>
+				<option value="sololo">Sololo</option>
+				<option value="moyale">Moyale</option>
+			</select>
 		</div>
-	</div>
+		<div class="form-group">
+			<label for="destination" class="control-label" >To:</label>
+				<select class="form-control" id="to" name="to">
+					<option value="isiolo">Isiolo</option>
+					<option value="nairobi">Nairobi</option>
+					<option value="marsabit">Marsabit</option>
+					<option value="sololo">Sololo</option>
+					<option value="moyale">Moyale</option>
+				</select>	
+		</div>
+		<div class="form-group">
+			<label for="departure-date" class="control-label" >Date of Departure:</label>
+			<input type="text" class="form-control" id="departure-date" name="departure-date" placeholder="Date of departure"/>
+		</div>
+		<div class="form-group">
+			<div class="radio"><label><input class="radio" type="radio" name="trip-type" id="one-way" value="1" checked>One way</label></div>
+			<div class="radio"><label><input class="radio" type="radio" name="trip-type" id="two-way" value="2">Two way</label></div>	
+		</div>
+		<div class="form-group" >
+			<div class="well well-sm" id="fare-summary">Fare per seat: Ksh. <span class="value">2000</span></div>
+			<input type="hidden" name="fare" id="fare-hidden" value="2000"/>	
+		</div>
+		<div class="form-group" >
+			<input type="submit" class="btn btn-success btn-md" role="button" id="btnCheckSeats" value="Check seats availability">	
+		</div>			
+	</form>
+   </div>
+   <div class="col-md-6">
+     <h3>Our Routes:</h3>
+	   <ul class="list-group available-routes">
+         <li class="list-group-item">Nairobi - Isiolo</li>
+         <li class="list-group-item">Isiolo - Merille</li>
+         <li class="list-group-item">Merille - Marsabit</li>
+         <li class="list-group-item">Marsabit - Sololo</li>
+         <li class="list-group-item">Sololo - Moyale</li>
+	   </ul>
+     <h3>Follow the links below to find us:<h3>
+	 <ul class="list-inline intro-social-buttons">
+              <li>
+                <a href="https://twitter.com/jayloabdullahi1" class="btn btn-warning btn-md" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/jayloabdullah" class="btn btn-warning btn-md" target="_blank"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/jillo_abdullah/" class="btn btn-warning btn-md" target="_blank"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
+              </li>  			  
+      </ul>
+   </div>
+  </div>
+</div>  
+</div>
+		
+	
 
 <!--page footer-->
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-	  <div class="well">
-		<footer class="text-center"> Copyright@ 2017 by Zain Services. All Rights Reserved.</footer>
+<div class="footer-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+		  <footer class="text-center"><p>Copyright @ 2017 by Zain Services. All Rights Reserved.</p></footer>
 	  </div>
-	</div>
+    </div>
   </div>
 </div>
 
@@ -210,21 +197,12 @@
 					<button class="btn btn-primary" type="submit" name="btnsubmit">Send</button>
 				</div>
 		  </form>
-			
-
 		</div>
 	</div> 
 </div>
-
-
-
-
-
 <script src="js/jquery.js"></script>
 <script src="js/code.js"></script>
 <script src="js/jquery-ui/jquery-ui.min.js"></script>
-
-
 
 </body>
 </html>
