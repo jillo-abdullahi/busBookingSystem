@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Select your Seats</title>
-	<meta name ="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Zayn Services | Select Seats</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bus reservation">
+    <meta name="author" content="Jillo Abdullahi">
+   
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+   <!--Google font-->
+   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+   <!--Font-awesome-->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    
+   <!-- Custom styles-->
+   <link href="./css/styles.css" rel="stylesheet">
+   <link href="js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
 
 	
 </head>
@@ -24,27 +40,28 @@
  
 
 <!--navbar main-->
-<div class="navbar navbar-inverse navbar-static-top">
-	<div class="container">
-		<a href="index.php" class="navbar-brand">Moyale Raha Reservation</a>
-		<button class="navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
-			
-			<span class ="icon-bar"></span>
-			<span class ="icon-bar"></span>
-			<span class ="icon-bar"></span>
+<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+	<div class="container-fluid">
+	  <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navHeaderCollapse">
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>	
 		</button>
-		<div class="collapse navbar-collapse navHeaderCollapse">
-			
+		<a class="navbar-brand" href="index.php">Zayn Services</a>
+	  </div>
+	
+	  <div class="collapse navbar-collapse" id ="navHeaderCollapse">
 			<ul class="nav navbar-nav navbar-right">
-				
 				<li class="active"><a href="index.php">Home</a></li>
 				<li><a href="aboutUs.php">About Us</a></li>
-				<li><a href="#contact" data-toggle= "modal">Contact Us</a></li>
+				<li><a href="#contact" data-toggle="modal">Contact Us</a></li>
 				<li><a href="adminSignIn.php">Administrator</a></li>
 				<li><a href="help.php">Help</a></li>
 			</ul>
 		</div>
 	</div>
+</nav>
 
 </div>
 <!--main navbar-->
